@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.divScroll {
+            overflow:scroll;
+            text-align: left;
+            height: 300px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 0px;
+            margin-top: 5px;
+        } 
+        </style>
+
+    
+<div class="logo"><div class ="titulo"> <h2>Catalisadores</h2></div></div>
+<div class="conteudo">
+
+ Indique se cada uma das afirmações a baixo são verdadeiras ou falsas e no final clique no botão "Verificar" para ter acesso ao seu resultado.
+
+<br><script src="js/java cata.js"></script>
+</head>
+
+
+<body>
+<div class="divScroll">
+  
+	<tr>
+	  
+	  	<div>
+	  		<p class="questao">1. Uma reação química é uma transformação na qual substâncias reagem entre si, dando origem a novas substâncias.</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q1" value="1">
+	        <label id="correctString1">verdadeiro</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>falso</label>
+	        
+    		</ul>
+	  	</div>
+
+	  <td>
+	  
+	  	<div>
+	  		<p class="questao">2. As enzimas são os produtos de todas as reações químicas.</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q2" value="0">
+	        <label id="correctString5">verdadeiro</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q2" value="1">
+	        <label>falso</label>
+	        
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	  
+	  	<div>
+	  		<p class="questao">3. Um catalisador é uma substância capaz de acelerar reações químicas.</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q3" value="1">
+	        <label id="correctString3">verdadeiro</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>falso</label>
+	        
+    		</ul>
+	  	</div>
+
+	  <td>
+	  
+	  	<div>
+	  		<p class="questao">4. As enzimas são catalisadores biológicos de origem proteica.</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q4" value="1">
+	        <label>verdadeiro</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label id="correctString4">falso</label>
+	       
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	  	<div>
+	  		<p class="questao">5. Uma reação química é uma transformação química na qual se originam os reagentes.</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q5" value="0">
+	        <label>verdadeiro </label>
+	        <br>
+	        <input class="answer" type="radio" name="q5" value="1">
+	        <label id="correctString2">falso </label>
+	       
+	  	</div>
+
+	  <td>
+	  
+	  	<div>
+	  		<p class="questao">6. A amilase salivar é uma enzima que degrada ou quebra o amido dos alimentos.</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q6" value="1">
+	        <label>verdadeiro</label>
+	        <br>
+	        <input class="answer" type="radio" name="q6" value="0">
+	        <label id="correctString6">falso </label>
+	       
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="questao">7. Um catalisador é utilizado para aquecer soluções.</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q7" value="0">
+	        <label>verdadeiro</label>
+	        <br>
+	        <input class="answer" type="radio" name="q7" value="1">
+	        <label id="correctString7">falso</label>
+	        
+	    	</ul>
+		</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="questao">8. A amilase salivar é o produto da mastigação.</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q8" value="0">
+	        <label>verdadeiro</label>
+	        <br>
+	        <input class="answer" type="radio" name="q8" value="1">
+	        <label id="correctString8">falso</label>
+	        <br>
+	        
+    		</ul>
+	  	</div>
+
+	  	<br><div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Verificar" />
+    	</div>
+  
+<!--show only wrong answers on submit-->
+    <div class="Resposta" id="respostacorreta1"></div>
+	<div class="Resposta" id="respostacorreta2"></div>
+    <div class="Resposta" id="respostacorreta3"></div>
+    <div class="Resposta" id="respostacorreta4"></div>
+    <div class="Resposta" id="respostacorreta5"></div>
+	<div class="Resposta" id="respostacorreta6"></div>
+    <div class="Resposta" id="respostacorreta7"></div>
+    <div class="Resposta" id="respostacorreta8"></div>
+
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+	
+
+	  	</div>
+	  </td>
+	</tr>
+<br/>
+
+<div class="voltar"><a href="#" id="linkVoltarJogar">Voltar</a></div>
+
+
+</body>
+
+
+
+</html>

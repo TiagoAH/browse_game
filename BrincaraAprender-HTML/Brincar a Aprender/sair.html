@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+	<script language="javascript" type="text/javascript"> 
+		function windowClose(botao) { 
+			if(botao=="Sim"){
+				window.open('','_parent',''); 
+				window.close();
+			}else{
+				$('#janelaJogo').load('index_conteudo.html');
+			}
+	} 
+</script>
+</head>
+<body>
+<div class="logo"><div class ="titulo"><h2>Sair</h2></div></div>
+<div id="Saida">
+	<div id ="sair">
+		<h2>Tem a certeza que pretende sair do jogo?</h2>
+	</div>	
+	<div id="botaoSaida">
+		<input type="button" value="Sim" onclick="windowClose(this.value);">
+		<input type="button" value="Nao" onclick="windowClose(this.value);">
+	</div>
+</div>
+
+</body>

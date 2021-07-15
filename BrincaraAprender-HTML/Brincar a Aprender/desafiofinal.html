@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.puzzle.js"></script>
+		<div class="logo"><div class ="titulo"><h2>Desafio Final</h2></div></div>
+
+		&nbsp &nbsp Realize a sopa de letras, encontrando as palavras dadas sobre todos os temas do jogo.
+		
+		<style type="text/css">
+		html, body {
+			margin: 20px;	
+			padding: 0px;
+		}
+		h2{
+  			margin-top: 5px;
+	  		margin-bottom: 0px;
+	  		margin-left: 20px;
+		}
+
+		span.tab{
+   		 padding: 0 80px; /* Or desired space*/
+		}
+		title{
+			font-size: 20px;
+			font-family:"Comic Sans MS";
+			display: inline;
+ 			width: 30%;
+		}	
+
+		p{
+			/*text-align: center;*/
+			font-family:"Comic Sans MS";
+			font-size: 15px;
+			display: inline;
+ 			width: 30%;
+ 			float: right;
+		}
+
+		
+		.letra {
+			width: 15px;
+			height: 15px;
+			line-height: 12px;
+			text-align: center;
+			position: absolute;
+			font-family:"Comic Sans MS";
+			font-size: 13px;
+			border: 1px solid black;
+			cursor: pointer;
+			background-color: #FFFFFF;
+			margin: -1px 0px 0px -1px;
+		}
+		
+		.highlight {
+			background-color: #FF0099;
+		}
+		
+		.found {
+			background-color: #3CB7F9;
+		}
+		
+		.canvas {
+			position: absolute;
+			border: 1px solid black;
+			margin: auto;
+			background-color: blue;
+			margin-left: 50px;
+			margin-bottom: 50px;
+		}
+		
+		.box {
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			border: 2px solid #FF0099;
+			-moz-border-radius: 15px;
+			-webkit-border-radius: 15px;
+			border-radius: 15px;
+		}
+			</style>
+		
+		<br><br><script type="text/javascript">
+			jQuery(function($){
+				$('#canvas').puzzle({
+					words: ['QUÍMICA','RECICLAGEM','OXIGÉNIO','BASE','ÁCIDO','SOLUÇÕES','REAÇÕES','ÁGUA','CATALISADORES','POLÍMERO','LABORATÓRIO','ENZIMAS','GOBELÉ','ECOPONTO']
+					, cols: 20
+					, rows: 20
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+	<div>
+	<p> <title>Palavras: </title> <br/>
+	<span class="tab" id='QUÍMICA'>Química</span>
+	<span class="tab" id='RECICLAGEM'>Reciclagem</span>
+	<span class="tab" id='OXIGÉNIO'>Oxigénio<br /></span>
+	<span class="tab" id='BASE'>Base<br /></span>
+	<span class="tab" id='ÁCIDO'>Ácido<br /></span>
+	<span class="tab" id='SOLUÇÕES'>Soluções<br /></span>
+	<span class="tab" id='REAÇÕES'>Reações<br /></span>
+	<span class="tab" id='ÁGUA'>Água<br /></span>
+	<span class="tab" id='CATALISADORES'>Catalisadores<br /></span>
+	<span class="tab" id='POLÍMERO'>Polímero<br /></span>
+	<span class="tab" id='LABORATÓRIO'>Laboratório<br /></span>
+	<span class="tab" id='ENZIMAS'>Enzimas<br /></span>
+	<span class="tab" id='GOBELÉ'>Gobelé<br /></span>
+	<span class="tab" id='ECOPONTO'>Ecoponto</span>
+	
+	</p>
+	</div>
+	<div id="canvas">
+		
+	</div>
+	</body>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="voltar"><a href="#" id="linkVoltarJogar">Voltar</a></div>
+
+

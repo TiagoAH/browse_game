@@ -1,0 +1,32 @@
+{"perguntas":[
+  
+	{
+	"question":"Um dos fatores pelos quais a floresta é responsável é: ",
+	"option1":"Manutenção da biodiversidade.",
+	"option2":"Aumento dos gases de efeito de estufa.",
+	"option3":"Aumento da erosão dos solos.",
+	"option4":"Produção de dióxido de carbono."
+	},
+	{
+	"question":"A destruição da floresta conduz:",
+	"option1":"Sedimentação dos rios e aumento dos gases do efeito de estufa.",
+	"option2":"Aumento do número de espécies animais e vegetais.",
+	"option3":"Maior produção de oxigénio.",
+	"option4":"Regularização do ciclo da água e do clima."
+	},
+	{
+	"question":"A combustão é uma reação química _____",
+	"option1":"muito energética que origina luz e calor.",
+	"option2":"onde o gás consumido é o dióxido de carbono.",
+	"option3":"pouco energética que origina luz e calor.",
+	"option4":"reversível."
+	},
+	{
+	"question":"Numa reação de combustão auto-sustentada é necessário:",
+	"option1":"Calor, combustível e comburente",
+	"option2":"Comburente, combustível e oxigénio",
+	"option3":"Calor, combustível e dióxido de carbono.",
+	"option4":"Material que arda, oxigénio e combustível."
+	}
+]
+}

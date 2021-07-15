@@ -1,0 +1,614 @@
+body{
+  background-color: rgb(121,207,251);
+  font-family: "Comic Sans MS";
+}
+h1{
+  margin: 0px;
+}
+h2{
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.center{
+  text-align: center;
+}
+
+.janelaJogo{
+  width:800px;
+  height:550px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin:-250px 0 0 -400px;
+  border: solid black 4px;
+  cursor: url('../cursor2.png'), auto;
+}
+
+.logoMenuInicial{
+  height: 200px;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo{
+  height: 70px;
+  background-image: url("../images/logo_small.png");
+  background-repeat: no-repeat;
+  background-position: right;
+
+}
+.titulo{
+  margin: 20px;
+}
+.voltar{
+  height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: right;
+  margin: 20px;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+}
+
+.voltar a{
+  text-decoration: none;
+  color: black;
+}
+
+.menuInicial{
+  text-align: center;
+  margin:20px; 
+
+}
+
+.menuInicial ul{
+  list-style-type: none;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+.menuInicial li{
+  height: 60px;
+  line-height: 60px;
+}
+
+.menuInicial a{
+  text-decoration: none;
+  color: black;
+}
+
+.menuInicial li:hover{
+  background-color: rgb(121,157,251);
+  padding-left: none;
+  margin-left: none;
+}
+
+
+.conteudo{
+  text-align: left;
+  height: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 00px;
+}
+
+.conteudo ul{
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.conteudo li{
+  height: 28px;
+  line-height: 28px;
+}
+
+.conteudo a{
+  text-decoration: none;
+  color: black;
+}
+
+.conteudo li:hover{
+  background-color: rgb(121,157,251);
+  padding-left: none;
+  margin-left: none;
+}
+.palavra{
+
+  height: 30px;
+  line-height: 30px;
+  width: 100px;
+  text-align: center;
+  float: left;
+  margin: 5px;
+  cursor: pointer;
+}
+#palavras{
+  width: 750px;
+  float: left;
+}
+#lista_imagems{
+  float: left;
+  width: 750px;
+}
+
+.imagem_legendagem{
+  width: 100px;
+  height: 100px;
+  /*border: solid red 1px;*/
+  float: left;
+  margin: 10px;
+}
+
+#imagem1{
+  background-image: url("../images/legendagem/almofariz.png");
+  
+}
+#imagem2{
+  background-image: url("../images/legendagem/balao volumetrico.png");
+  
+}
+#imagem3{
+  background-image: url("../images/legendagem/corrosivo.png");
+  
+}
+#imagem4{
+  background-image: url("../images/legendagem/erlenmayer.png");
+  
+}
+#imagem5{
+  background-image: url("../images/legendagem/funil.png");
+  
+}
+#imagem6{
+  background-image: url("../images/legendagem/gobele.png");
+  
+}
+#imagem7{
+  background-image: url("../images/legendagem/toxico.png"); 
+}
+
+#imagem8{
+  background-image: url("../images/legendagem/inflamavel.png");
+  
+}
+#imagem9{
+  background-image: url("../images/legendagem/irritante.png");
+  
+}
+#imagem10{
+  background-image: url("../images/legendagem/proveta.png");
+  
+}
+#imagem11{
+  background-image: url("../images/legendagem/suporte.png");
+  
+}
+#imagem12{
+  background-image: url("../images/legendagem/tubo de ensaio.png");
+  
+}
+
+
+.palavraCerta{
+  color:white;
+  background-color: black;
+  opacity:0.8;
+}
+
+
+#solucoes>div{
+  float: left;
+  width: 140px;
+  height: 140px;
+  /*border: solid red 1px; */
+  margin: 5px;
+}
+#solucoes>div>input{
+  font-size: 15px;
+  width: 140px;
+  height: 30px;
+  border: solid red 20px;
+}
+
+#imagem13{
+  background-image: url("../images/solucoes/cristalizacao.png");
+}
+
+#imagem14{
+  background-image: url("../images/solucoes/destilacao.png");
+}
+
+#imagem15{
+  background-image: url("../images/solucoes/filtracao.png"); 
+}
+
+#imagem16{
+  background-image: url("../images/solucoes/decantacao_liquido_solido.png");
+}
+
+#imagem17{
+  background-image: url("../images/solucoes/magnetica.png"); 
+}
+
+#imagem_solucoes{
+  text-align: center;
+  float: left;
+}
+
+
+#sopaLetrasEsquerda{
+  float: left;
+  height: 330px;
+  width: 420px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+#sopaLetrasDireita{
+  float: left;
+  height: 330px;
+  width: 320px;
+
+}
+
+.tabelaSopa{
+   border-collapse:collapse;
+}
+.tabelaSopa td{
+  width:30px;
+  height: 30px;
+  padding: 0px;
+  margin:0px;
+}
+
+
+
+.tabelaSopa input{
+   border: solid black 2px;
+   width: 30px;
+   height: 30px;
+   
+   font-size: 20px;
+   text-transform:uppercase;
+   text-align: center;
+   margin-left: -2px;
+   margin-top: -2px;
+
+}
+
+.sopaCerto{
+  background-color: lightgreen;
+}
+
+.sopaErrado{
+  background-color: rgb(255, 102, 102);
+}
+#botoes{
+  float:left;
+}
+#imagemsPhEsquerda{
+  float: left;
+  height: 256px;
+  width: 197px;
+  background-image: url("../images/gobele/roxo.png");
+  margin: 30px;
+}
+#imagemsPhDireita{
+  float: left;
+  height: 215px;
+  width: 400px;
+  background-image: url("../images/tabelaph.png");
+  background-repeat: no-repeat;
+  margin: 30px;
+}
+
+
+
+html, body {
+  margin: 0;
+    background-color: rgb(121,207,251);
+    font-family:"Comic Sans MS";
+      }
+
+#navContent{
+margin:auto;  
+width:800px;
+height:350px;
+position:relative;
+overflow:hidden;
+}
+
+#game1{
+margin:auto;
+width:800px;
+height:350px;
+right:0px;
+position:absolute;
+}
+
+#game2{
+margin:auto;  
+width:800px;
+height:350px;
+right:-800px;
+position:absolute;
+} 
+
+
+.questionText{
+text-align: center;
+font-size:18px;
+}
+
+.option{
+width:400px;
+height:30px;
+margin:28px;
+font-size:10px;
+color:#FFFFFF; 
+padding:2px;
+padding-left:10px;
+border: 2px solid white;
+cursor:pointer;
+background-color:#3399FF;
+}
+
+.option:hover{
+border:#FF0099 solid 2px;
+color:#FF0099;
+}
+
+#topbar{
+height:50px;
+margin:auto;
+margin-top:50px;
+color:#FFF;
+font-size:36px;
+font-family:"Comic Sans MS";
+width:800px;
+border-bottom:solid white 1px;
+}
+ 
+.feedback1{
+width:100px;
+padding:5px;
+font-size:20px;
+color:#FFFFCC;
+background-color:#009900;
+font-family:"Comic Sans MS";
+text-align:center;
+}
+
+.feedback2{
+width:100px;
+padding:5px;
+font-size:20px;
+color:#FFFFCC;
+background-color:#CC3300;
+font-family:"Comic Sans MS";
+text-align:center;
+}
+ 
+ 
+{
+  border: 1px dotted black;
+}
+
+p.questao {
+  font-family: "Comic Sans MS", sans-serif;
+  font-size:14px;
+  color: #2E2E2E;
+  margin-bottom:2px;
+}
+
+
+h2.quizScore{
+  font-family: "Comic Sans MS", sans-serif;
+  font-size:12px;
+}
+
+div.Resposta{
+  font-family: "Comic Sans MS", sans-serif;
+  font-size:16px;
+  color: #424242;
+  padding: 4px 0 4px 0;
+}
+
+label {
+  font-family: "Comic Sans MS", sans-serif;
+  font-size:12px;
+  color: #424242;
+  vertical-align:top;
+  margin-top:5px;
+}
+
+input.answer[type="radio"] {
+  margin-bottom: 5px;
+}
+
+input.quizSubmit[type="submit"] {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  
+  -webkit-transition-property: color, background-color;
+  -webkit-transition-timing-function: ease, ease;
+  box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 5px 0px;
+  color: #424242;
+  font-family: "Comic Sans MS", sans-serif;
+  background-color: white;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  /*text-transform:uppercase;*/
+  height:35px;
+  width:85px;
+  border: 1px solid #5E5E5E;
+  border-radius:5px;
+  
+ }
+
+input.quizSubmit[type="submit"]:hover {
+  color: #ffffff;
+  background: #680f11;
+  
+}
+
+table catalisadores {
+  background-color: #F2F2F2;
+  border:1px solid #BDBDBD;
+  border-radius:5px;
+  padding:10px;
+  padding-left:25px;
+  box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px;
+}
+
+th {
+  
+}
+
+tr {
+  
+}
+
+td {
+
+}
+
+.submitter {
+    width:85px;
+}
+
+.hide {
+    display:none;
+}
+
+#lixo{
+  width: 370px;
+  height: 370px;
+  float: left;
+  background-image: url("../images/reciclagem/planeta terra.png");
+  background-repeat: no-repeat;
+}
+
+#ecoPontos{
+  float: left;
+  width: 100px;
+  height: 400px;
+  margin-right: 200px;
+}
+
+.imagemEcoponto{
+  width: 90px;
+  height: 120px;
+}
+.imagemLixo{
+  cursor: pointer;
+      float: left;
+      margin: 10px;
+}
+
+#azul1{
+    background-image: url("../images/reciclagem/azul.png");
+}
+
+#verde2{
+    background-image: url("../images/reciclagem/verde.png");
+}
+
+#amarelo3{
+    background-image: url("../images/reciclagem/amarelo.png");
+}
+
+#boiao2{
+    width: 44px;
+    height: 57px;
+    background-image: url("../images/reciclagem/boiao de vidro.png");
+
+}
+
+#cartao1{
+    width: 100px;
+    height: 62px;
+    background-image: url("../images/reciclagem/cartao.png");
+}
+
+#garrafaAgua3{
+    width: 40px;
+    height: 121px;
+    background-image: url("../images/reciclagem/garrafa de agua.png");
+}
+
+#garrafaVinho2{
+    width: 50px;
+    height: 157px;
+    background-image: url("../images/reciclagem/garrafa de vinho.png");
+}
+
+#jornal1{
+    width: 75px;
+    height: 50px;
+    background-image: url("../images/reciclagem/jornal.png");
+}
+
+#lata3{
+    width: 50px;
+    height: 75px;
+    background-image: url("../images/reciclagem/lata.png");
+}
+
+#conservas3{
+    width: 60px;
+    height: 68px;
+    background-image: url("../images/reciclagem/latas de conserva.png");
+}
+
+#cereais1{
+    width: 65px;
+    height: 90px;
+    background-image: url("../images/reciclagem/pacote de cereais.png");
+}
+
+#leite3{
+    width: 53px;
+    height: 75px;
+    background-image: url("../images/reciclagem/pacote de leite.png");
+}
+
+#papel1{
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/reciclagem/papel.png");
+}
+
+#saco3{
+    width: 50px;
+    height: 70px;
+    background-image: url("../images/reciclagem/saco.png");
+}
+
+#ovos1{
+    width: 100px;
+    height: 55px;
+    background-image: url("../images/reciclagem/ovos.png");
+}
+
+
+
+#Saida{
+  position: relative;
+  top: 120px;
+}
+#sair{
+  text-align: center;
+}
+#botaoSaida{
+text-align: center;
+}
